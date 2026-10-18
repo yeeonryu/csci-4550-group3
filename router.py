@@ -1,5 +1,6 @@
 from socket import *
 import sys,json
+import packet
 
 # command line
 configType = sys.argv[1]
@@ -20,6 +21,11 @@ print(f"Server ready for receiving on port {port}")
 
 while True:
     message, address = routerSocket.recvfrom(2048)
-    print(message)
-    # temp fixed next hop
-    routerSocket.sendto(message, (ip, 2222))
+    decoded = packet.decode(message)
+    dest = decoded['dest']
+    nextHop = routerInfo['table'][dest]
+    if nextHop not in routerInfo['neighbor_ports']:
+        print("Next hop is not in the neighbor ports, dropping the packet")
+        continue
+    print(dest, nextHop)
+    routerSocket.sendto(message, (ip, nextHop))
