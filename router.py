@@ -11,15 +11,15 @@ routerInfo = config[routerName]
 
 
 port = routerInfo['local_port']
-serverSocket = socket(AF_INET, SOCK_DGRAM)
+routerSocket = socket(AF_INET, SOCK_DGRAM)
 
 ip = routerInfo['ip']
-serverSocket.bind((ip, port))
+routerSocket.bind((ip, port))
 
 print(f"Server ready for receiving on port {port}")
 
 while True:
-    message, address = serverSocket.recvfrom(2048)
+    message, address = routerSocket.recvfrom(2048)
     print(message)
     # temp fixed next hop
-    serverSocket.sendto(message, (ip, 2222))
+    routerSocket.sendto(message, (ip, 2222))

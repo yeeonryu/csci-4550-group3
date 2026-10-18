@@ -1,7 +1,7 @@
 import json
 
 MAX_SIZE = 1200
-
+HOP_LIMIT = 8
 
 def make(src, dest, packetType, hopLimit, packetId, data):
    return {
