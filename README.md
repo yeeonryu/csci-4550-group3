@@ -9,3 +9,15 @@ Running a router
 - routerName: `routerA`, `routerB`, `routerC`, or `routerD`
 
 Say you want to run for routerA with upper path, then the command would be `python3 router.py configUp routerA`
+
+Running a host
+
+`python3 host.py [configType] [hostName] [action] [otherHostName](*only when action is send)`
+
+- configType: `configUp` or `configLow`
+- hostName: `hostOne`, `hostTwo`
+- action: `send` or `listen`
+- otherHostName: `hostOne`, `hostTwo` (host other than the `hostName` chosen)
+
+
+Say you want to run for hostOne with upper path to send, then the command would be `python3 host.py configUp hostOne send hsotTwo`
