@@ -21,3 +21,6 @@ Running a host
 
 
 Say you want to run for hostOne with upper path to send, then the command would be `python3 host.py configUp hostOne send hsotTwo`
+
+
+https://docs.google.com/document/d/1LUcgTT27H8fMWzxBuGkkyLF-lJxDqNsxl7OFqX1S9ac/edit?usp=sharing
