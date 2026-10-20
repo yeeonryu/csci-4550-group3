@@ -3,6 +3,8 @@ import sys,json
 
 import packet, time
 
+NUM_PROBES = 25
+
 # command line
 configType = sys.argv[1]
 hostName = sys.argv[2]
@@ -23,16 +25,29 @@ neighborPort = hostInfo['neighbor_ports'][0]
 addressName = hostInfo['address_name']
 
 if action == 'send':
+    matched = 0
+    timeouts = 0
+    hostSocket.settimeout(1)
+
     otherHostName = sys.argv[4]
     print(f"Sending packet to {neighborPort}")
-    probeMsg = packet.make(addressName, otherHostName, 'probe', packet.HOP_LIMIT, 1, 'SLU CS rules!!!')
-    encodedProbeMsg = packet.encode(probeMsg)
-    sec = time.monotonic()
-    hostSocket.sendto(encodedProbeMsg, (ip, neighborPort))
-    data, addr = hostSocket.recvfrom(2048)
-    decoded = packet.decode(data)
-    if decoded['type'] == 'echo' and decoded['id'] == probeMsg['id']:
-        print(f"Echo received from {decoded['src']} in {(time.monotonic() - sec) * 1000} ms")
+    for i in range(NUM_PROBES):
+        probeMsg = packet.make(addressName, otherHostName, 'probe', packet.HOP_LIMIT, i, 'SLU CS rules!!!')
+        encodedProbeMsg = packet.encode(probeMsg)
+        sec = time.monotonic()
+        hostSocket.sendto(encodedProbeMsg, (ip, neighborPort))
+        try:
+            data, addr = hostSocket.recvfrom(2048)
+        except timeout:
+            timeouts += 1
+            continue
+        decoded = packet.decode(data)
+        if decoded == None:
+            continue
+        if decoded['type'] == 'echo' and decoded['id'] == probeMsg['id']:
+            matched += 1
+            print(f"Echo received from {decoded['src']} in {(time.monotonic() - sec) * 1000} ms")
+    print(f"{NUM_PROBES}sent",f"{matched} matched", f" {timeouts} timed out")
 
 elif action == 'listen':
     print(f"Listening packet from {neighborPort}")
