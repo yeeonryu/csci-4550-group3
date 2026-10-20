@@ -1,0 +1,56 @@
+
+{
+    "hostOne": {
+        "ip": "127.0.0.1",
+        "address_name": "hostOne",
+        "local_port": 1111,
+        "neighbor_ports": [3333]
+    },
+    "hostTwo": {
+        "ip": "127.0.0.1",
+        "address_name": "hostTwo",
+        "local_port": 2222,
+        "neighbor_ports": [6666]
+    },
+    "routerA": {
+        "ip": "127.0.0.1",
+        "address_name": "routerA",
+        "local_port": 3333,
+        "neighbor_ports": [1111, 4444,5555],
+        "table": {
+            "hostOne": 1111,
+            "hostTwo": 4444
+        }
+    },
+    "routerB": {
+        "ip": "127.0.0.1",
+        "address_name": "routerB",
+        "local_port": 4444,
+        "neighbor_ports": [3333, 6666],
+        "table": {
+            "hostOne": 3333,
+            "hostTwo": 3333
+        }
+    },
+    "routerC": {
+        "ip": "127.0.0.1",
+        "address_name": "routerC",
+        "local_port": 5555,
+        "neighbor_ports": [3333, 6666],
+        "table": {
+            "hostOne": 3333,
+            "hostTwo": 6666
+        }
+    },
+    "routerD": {
+        "ip": "127.0.0.1",
+        "address_name": "routerD",
+        "local_port": 6666,
+        "neighbor_ports": [4444, 5555, 2222],
+        "table": {
+            "hostOne": 4444,
+            "hostTwo": 2222
+        }
+
+    }
+}

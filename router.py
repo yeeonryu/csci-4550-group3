@@ -2,11 +2,40 @@ from socket import *
 import sys,json
 import packet
 
+# if the user doesn't supply enough arguments
+if len(sys.argv) != 3:
+    print("Usage: python router.py <configType> <routerName>")
+    sys.exit(1)
+
 # command line
 configType = sys.argv[1]
 routerName = sys.argv[2]
-config = json.load(open(f'{configType}.json'))
+
+# Handle invalid configuration files
+try:
+    config = json.load(open(f'{configType}.json'))
+except FileNotFoundError:
+    print(f"Error: Configuration file '{configType}.json' not found.")
+    sys.exit(1)
+except json.JSONDecodeError:
+    print(f"Error: Configuration file '{configType}.json' contains invalid JSON.")
+    sys.exit(1)
+
+# Check whether the router exists
+if routerName not in config:
+    print(f"Error: Router '{routerName}' not found in configuration.")
+    sys.exit(1)
+
 routerInfo = config[routerName]
+
+# Check if the forwarding table exists
+if 'table' not in routerInfo:
+    print(f"Error: Forwarding table missing for '{routerName}',")
+    sys.exit(1)
+
+if not isinstance(routerInfo['table'], dict):
+    print(f"Error: Invalid forwarding table for '{routerName}',")
+    sys.exit(1)
 
 #print(routerInfo)
 
