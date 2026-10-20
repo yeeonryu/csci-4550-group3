@@ -22,10 +22,19 @@ print(f"Server ready for receiving on port {port}")
 while True:
     message, address = routerSocket.recvfrom(2048)
     decoded = packet.decode(message)
+    if not packet.validate(decoded):
+        print("Packet is not valid, dropping the packet")
+        continue
+    decoded['hopLimit'] -= 1
     dest = decoded['dest']
+    if decoded['hopLimit'] < 1:
+        print("Hop limit is ", decoded['hopLimit'], ", dropping the packet")
+        continue
     nextHop = routerInfo['table'][dest]
     if nextHop not in routerInfo['neighbor_ports']:
         print("Next hop is not in the neighbor ports, dropping the packet")
         continue
-    print(dest, nextHop)
-    routerSocket.sendto(message, (ip, nextHop))
+    else:
+        encoded = packet.encode(decoded)
+        routerSocket.sendto(encoded, (ip, nextHop))
+        print(dest, nextHop)
