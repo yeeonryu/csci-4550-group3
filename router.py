@@ -37,9 +37,23 @@ if not isinstance(routerInfo['table'], dict):
     print(f"Error: Invalid forwarding table for '{routerName}',")
     sys.exit(1)
 
+# Check whether neighbor ports exist
+if 'neighbor_ports' not in routerInfo:
+    print(f"Error: Neighbor ports missing for '{routerName}'")
+    sys.exit(1)
+
+# Check whether neighbor ports are stored as a list
+if not isinstance(routerInfo['neighbor_ports'], list):
+    print(f"Error: Invalid neighbor ports for '{routerName}'")
+    sys.exit(1)
+
+# Check that each forwarding-table entry points to a neighbor
+for destination, nextHop in routerInfo['table'].items():
+    if nextHop not in routerInfo['neighbor_ports']:
+        print(f"Error: Invalid next hop {nextHop} for destination '{destination}'")
+        sys.exit(1)
+
 #print(routerInfo)
-
-
 port = routerInfo['local_port']
 routerSocket = socket(AF_INET, SOCK_DGRAM)
 
