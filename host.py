@@ -3,6 +3,8 @@ import sys,json
 
 import packet, time
 
+import log
+
 NUM_PROBES = 25
 
 # command line
@@ -36,29 +38,35 @@ if action == 'send':
         encodedProbeMsg = packet.encode(probeMsg)
         sec = time.monotonic()
         hostSocket.sendto(encodedProbeMsg, (ip, neighborPort))
+        log.write(hostName, 'send', probeMsg, neighborPort, 'no issue, probe sent')
         try:
             data, addr = hostSocket.recvfrom(2048)
         except timeout:
+            log.write(hostName, 'timeout', probeMsg, None, 'no echo')
             timeouts += 1
             continue
         decoded = packet.decode(data)
         if decoded == None:
+            log.write(hostName, 'drop', None, None, 'invalid packet')
             continue
         if decoded['type'] == 'echo' and decoded['id'] == probeMsg['id']:
             matched += 1
-            print(f"Echo received from {decoded['src']} in {(time.monotonic() - sec) * 1000} ms")
+            log.write(hostName, 'receive', decoded, neighborPort, f"echo received in {(time.monotonic() - sec) * 1000} ms")
     print(f"{NUM_PROBES}sent",f"{matched} matched", f" {timeouts} timed out")
-
 elif action == 'listen':
     print(f"Listening packet from {neighborPort}")
     while True:
         data, addr = hostSocket.recvfrom(2048)
         decoded = packet.decode(data)
-        print(decoded)
+        if decoded == None:
+            log.write(hostName, 'drop', None, None, 'invalid packet')
+            continue
+        log.write(hostName, 'receive', decoded, None, 'no issue, packet received')
         if decoded['type'] == 'probe'and decoded['dest'] == addressName:
             echoMsg =packet.make(addressName, decoded['src'], 'echo', packet.HOP_LIMIT, decoded['id'], decoded['data'])
             encodedEchoMsg = packet.encode(echoMsg)
             hostSocket.sendto(encodedEchoMsg, (ip, neighborPort))
+            log.write(hostName, 'send', echoMsg, neighborPort, 'no issue, echo sent')
 else:
     print("Wrong action")
     exit(1)

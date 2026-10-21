@@ -3,6 +3,8 @@ import sys,json
 import packet
 import random
 
+import log
+
 # if the user doesn't supply enough arguments
 if len(sys.argv) != 3:
     print("Usage: python router.py <configType> <routerName>")
@@ -74,28 +76,28 @@ while True:
     message, address = routerSocket.recvfrom(2048)
     decoded = packet.decode(message)
     if not packet.validate(decoded):
-        print("Packet is not valid, dropping the packet")
+        log.write(routerName, 'drop', None, None, 'invalid packet')
         continue
     decoded['hopLimit'] -= 1
     dest = decoded['dest']
     if decoded['hopLimit'] < 1:
-        print("Hop limit is ", decoded['hopLimit'], ", dropping the packet")
+        log.write(routerName, 'drop', decoded, None, 'hop limit passed')
         continue
     if dest not in routerInfo['table']:
-        print("Destination isn't in the forwarding table, dropping the packet")
+        log.write(routerName, 'drop', decoded, None, 'destination not in forwarding table')        
         continue
     nextHop = routerInfo['table'][dest]
     if nextHop not in routerInfo['neighbor_ports']:
-        print("Next hop is not in the neighbor ports, dropping the packet")
+        log.write(routerName, 'drop', decoded, nextHop, 'not a neighbor port')
         continue
     else:
         if nextHop == lossNextHop:
             if dropId is not None and decoded['id'] == dropId:
-                print("Drop ID is ", dropId, ", dropping the packet")
+                log.write(routerName, 'drop', decoded, nextHop, 'drop is forced')
                 continue
             if randomSeed.random() < lossRate:
-                print("Loss rate is ", lossRate, ", dropping the packet")
+                log.write(routerName, 'drop', decoded, nextHop, 'drop because of loss rate triggered')
                 continue
         encoded = packet.encode(decoded)
         routerSocket.sendto(encoded, (ip, nextHop))
-        print(dest, nextHop)
+        log.write(routerName, 'forward', decoded, nextHop, 'no issue with forward')
