@@ -1,6 +1,7 @@
 from socket import *
 import sys,json
 import packet
+import random
 
 # if the user doesn't supply enough arguments
 if len(sys.argv) != 3:
@@ -27,6 +28,13 @@ if routerName not in config:
     sys.exit(1)
 
 routerInfo = config[routerName]
+
+lossRate = routerInfo.get('loss_rate', 0.0)
+seed = routerInfo.get('seed', 1)
+lossNextHop = routerInfo.get('next_hop', None)
+dropId = routerInfo.get('drop_id', None)
+
+randomSeed = random.Random(seed)
 
 # Check if the forwarding table exists
 if 'table' not in routerInfo:
@@ -81,6 +89,13 @@ while True:
         print("Next hop is not in the neighbor ports, dropping the packet")
         continue
     else:
+        if nextHop == lossNextHop:
+            if dropId is not None and decoded['id'] == dropId:
+                print("Drop ID is ", dropId, ", dropping the packet")
+                continue
+            if randomSeed.random() < lossRate:
+                print("Loss rate is ", lossRate, ", dropping the packet")
+                continue
         encoded = packet.encode(decoded)
         routerSocket.sendto(encoded, (ip, nextHop))
         print(dest, nextHop)

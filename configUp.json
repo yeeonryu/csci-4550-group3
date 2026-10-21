@@ -20,7 +20,11 @@
         "table": {
             "hostOne": 1111,
             "hostTwo": 4444
-        }
+        },
+        "seed": 720,
+        "loss_rate": 0.05,
+        "next_hop": 4444,
+        "drop_id": null
     },
     "routerB": {
         "ip": "127.0.0.1",
