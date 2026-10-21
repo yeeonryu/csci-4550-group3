@@ -25,7 +25,7 @@
         "loss_rate": 0.0,
         "next_hop": 4444,
         "drop_id": null,
-        "delay_ms": 100
+        "delay_ms": 0
     },
     "routerB": {
         "ip": "127.0.0.1",
