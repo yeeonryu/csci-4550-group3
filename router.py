@@ -4,6 +4,7 @@ import packet
 import random
 
 import log
+import threading
 
 # if the user doesn't supply enough arguments
 if len(sys.argv) != 3:
@@ -35,6 +36,7 @@ lossRate = routerInfo.get('loss_rate', 0.0)
 seed = routerInfo.get('seed', 1)
 lossNextHop = routerInfo.get('next_hop', None)
 dropId = routerInfo.get('drop_id', None)
+delayMs = routerInfo.get('delay_ms', 0)
 
 randomSeed = random.Random(seed)
 
@@ -99,5 +101,10 @@ while True:
                 log.write(routerName, 'drop', decoded, nextHop, 'drop because of loss rate triggered')
                 continue
         encoded = packet.encode(decoded)
+        if nextHop == lossNextHop and delayMs > 0:
+            t = threading.Timer(delayMs / 1000, routerSocket.sendto, args=[encoded, (ip, nextHop)])
+            t.start()
+            log.write(routerName, 'delay', decoded, nextHop, f'delayed for {delayMs} ms')
+            continue
         routerSocket.sendto(encoded, (ip, nextHop))
         log.write(routerName, 'forward', decoded, nextHop, 'no issue with forward')

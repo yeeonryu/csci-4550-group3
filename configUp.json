@@ -22,9 +22,10 @@
             "hostTwo": 4444
         },
         "seed": 720,
-        "loss_rate": 0.05,
+        "loss_rate": 0.0,
         "next_hop": 4444,
-        "drop_id": null
+        "drop_id": null,
+        "delay_ms": 100
     },
     "routerB": {
         "ip": "127.0.0.1",
