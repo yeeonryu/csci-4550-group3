@@ -2928,3 +2928,820 @@ routerD, forward, hostTwo, hostOne, echo, 7, 24, 4444, no issue with forward, 17
 routerB, forward, hostTwo, hostOne, echo, 6, 24, 3333, no issue with forward, 1792547262.745922, d100ms-l5pct-s722
 routerA, forward, hostTwo, hostOne, echo, 5, 24, 1111, no issue with forward, 1792547262.746191, d100ms-l5pct-s722
 hostOne, receive, hostTwo, hostOne, echo, 5, 24, 3333, echo received in 105.93712498666719 ms, 1792547262.746253, d100ms-l5pct-s722
+hostOne, send, hostOne, hostTwo, probe, 8, 0, 3333, no issue, probe sent, 1792609759.211532, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 0, 5555, no issue with forward, 1792609759.211797, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 0, 6666, no issue with forward, 1792609759.211818, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 0, 2222, no issue with forward, 1792609759.211923, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 0, None, no issue, packet received, 1792609759.212003, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 0, 6666, no issue, echo sent, 1792609759.21209, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 0, 5555, no issue with forward, 1792609759.212127, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 0, 3333, no issue with forward, 1792609759.212178, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 0, 1111, no issue with forward, 1792609759.21222, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 0, 3333, echo received in 0.7829579990357161 ms, 1792609759.212254, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 1, 3333, no issue, probe sent, 1792609759.212302, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 1, 5555, no issue with forward, 1792609759.212339, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 1, 6666, no issue with forward, 1792609759.212388, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 1, 2222, no issue with forward, 1792609759.212429, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 1, None, no issue, packet received, 1792609759.21247, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 1, 6666, no issue, echo sent, 1792609759.212522, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 1, 5555, no issue with forward, 1792609759.212555, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 1, 3333, no issue with forward, 1792609759.212596, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 1, 1111, no issue with forward, 1792609759.212652, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 1, 3333, echo received in 0.39066700264811516 ms, 1792609759.212697, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 2, 3333, no issue, probe sent, 1792609759.21276, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 2, 5555, no issue with forward, 1792609759.212791, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 2, 6666, no issue with forward, 1792609759.212849, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 2, 2222, no issue with forward, 1792609759.212908, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 2, None, no issue, packet received, 1792609759.21292, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 2, 6666, no issue, echo sent, 1792609759.212973, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 2, 5555, no issue with forward, 1792609759.2130291, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 2, 3333, no issue with forward, 1792609759.213065, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 2, 1111, no issue with forward, 1792609759.213117, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 2, 3333, echo received in 0.391624984331429 ms, 1792609759.213145, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 3, 3333, no issue, probe sent, 1792609759.213197, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 3, 5555, no issue with forward, 1792609759.213234, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 3, 6666, no issue with forward, 1792609759.213272, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 3, 2222, no issue with forward, 1792609759.213307, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 3, None, no issue, packet received, 1792609759.213352, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 3, 6666, no issue, echo sent, 1792609759.2134058, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 3, 5555, no issue with forward, 1792609759.2134411, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 3, 3333, no issue with forward, 1792609759.2134778, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 3, 1111, no issue with forward, 1792609759.2135081, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 3, 3333, echo received in 0.37033300031907856 ms, 1792609759.213564, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 4, 3333, no issue, probe sent, 1792609759.2136152, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 4, 5555, no issue with forward, 1792609759.213641, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 4, 6666, no issue with forward, 1792609759.2136781, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 4, 2222, no issue with forward, 1792609759.2137, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 4, None, no issue, packet received, 1792609759.213723, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 4, 6666, no issue, echo sent, 1792609759.2137651, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 4, 5555, no issue with forward, 1792609759.213803, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 4, 3333, no issue with forward, 1792609759.2138398, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 4, 1111, no issue with forward, 1792609759.213853, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 4, 3333, echo received in 0.2738339826464653 ms, 1792609759.213883, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 5, 3333, no issue, probe sent, 1792609759.2139258, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 5, 5555, no issue with forward, 1792609759.2139509, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 5, 6666, no issue with forward, 1792609759.2140129, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 5, 2222, no issue with forward, 1792609759.214032, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 5, None, no issue, packet received, 1792609759.2140942, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 5, 6666, no issue, echo sent, 1792609759.214144, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 5, 5555, no issue with forward, 1792609759.214195, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 5, 3333, no issue with forward, 1792609759.2143009, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 5, 1111, no issue with forward, 1792609759.214415, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 5, 3333, echo received in 0.506415992276743 ms, 1792609759.2144299, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 6, 5555, no issue with forward, 1792609759.21456, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 6, 3333, no issue, probe sent, 1792609759.214677, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 6, 6666, no issue with forward, 1792609759.214704, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 6, None, no issue, packet received, 1792609759.214807, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 6, 6666, no issue, echo sent, 1792609759.214854, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 6, 2222, no issue with forward, 1792609759.2148612, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 6, 5555, no issue with forward, 1792609759.214947, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 6, 3333, no issue with forward, 1792609759.214977, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 6, 1111, no issue with forward, 1792609759.215032, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 6, 3333, echo received in 0.5949579935986549 ms, 1792609759.2150981, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 7, 3333, no issue, probe sent, 1792609759.215158, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 7, 5555, no issue with forward, 1792609759.2152052, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 7, 6666, no issue with forward, 1792609759.21522, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 7, 2222, no issue with forward, 1792609759.215302, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 7, None, no issue, packet received, 1792609759.2153568, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 7, 6666, no issue, echo sent, 1792609759.215399, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 7, 5555, no issue with forward, 1792609759.2154372, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 7, 3333, no issue with forward, 1792609759.215462, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 7, 1111, no issue with forward, 1792609759.215494, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 7, 3333, echo received in 0.39179102168418467 ms, 1792609759.215541, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 8, 3333, no issue, probe sent, 1792609759.215581, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 8, 5555, no issue with forward, 1792609759.215607, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 8, 6666, no issue with forward, 1792609759.215662, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 8, 2222, no issue with forward, 1792609759.215709, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 8, None, no issue, packet received, 1792609759.215724, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 8, 6666, no issue, echo sent, 1792609759.215758, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 8, 5555, no issue with forward, 1792609759.2157881, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 8, 3333, no issue with forward, 1792609759.215821, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 8, 1111, no issue with forward, 1792609759.215847, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 8, 3333, echo received in 0.3146659873891622 ms, 1792609759.215891, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 9, 3333, no issue, probe sent, 1792609759.215931, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 9, 5555, no issue with forward, 1792609759.2159512, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 9, 6666, no issue with forward, 1792609759.2159748, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 9, 2222, no issue with forward, 1792609759.2160199, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 9, None, no issue, packet received, 1792609759.21604, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 9, 6666, no issue, echo sent, 1792609759.216084, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 9, 5555, no issue with forward, 1792609759.216115, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 9, 3333, no issue with forward, 1792609759.216148, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 9, 1111, no issue with forward, 1792609759.21618, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 9, 3333, echo received in 0.28583299717865884 ms, 1792609759.2162108, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 10, 3333, no issue, probe sent, 1792609759.216248, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 10, 5555, no issue with forward, 1792609759.2162838, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 10, 6666, no issue with forward, 1792609759.2162921, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 10, 2222, no issue with forward, 1792609759.216324, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 10, None, no issue, packet received, 1792609759.2163498, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 10, 6666, no issue, echo sent, 1792609759.216387, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 10, 5555, no issue with forward, 1792609759.216414, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 10, 3333, no issue with forward, 1792609759.2164412, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 10, 1111, no issue with forward, 1792609759.21646, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 10, 3333, echo received in 0.2382500097155571 ms, 1792609759.216481, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 11, 3333, no issue, probe sent, 1792609759.216518, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 11, 5555, no issue with forward, 1792609759.216536, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 11, 6666, no issue with forward, 1792609759.2165592, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 11, 2222, no issue with forward, 1792609759.2165902, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 11, None, no issue, packet received, 1792609759.21661, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 11, 6666, no issue, echo sent, 1792609759.21665, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 11, 5555, no issue with forward, 1792609759.216678, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 11, 3333, no issue with forward, 1792609759.216695, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 11, 1111, no issue with forward, 1792609759.216735, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 11, 3333, echo received in 0.23900001542642713 ms, 1792609759.216754, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 12, 3333, no issue, probe sent, 1792609759.2168, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 12, 5555, no issue with forward, 1792609759.21682, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 12, 6666, no issue with forward, 1792609759.2168598, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 12, 2222, no issue with forward, 1792609759.2168808, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 12, None, no issue, packet received, 1792609759.216918, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 12, 6666, no issue, echo sent, 1792609759.216958, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 12, 5555, no issue with forward, 1792609759.217036, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 12, 3333, no issue with forward, 1792609759.217111, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 12, 1111, no issue with forward, 1792609759.217172, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 12, 3333, echo received in 0.46812501386739314 ms, 1792609759.21727, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 13, 3333, no issue, probe sent, 1792609759.2173078, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 13, 5555, no issue with forward, 1792609759.217334, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 13, 6666, no issue with forward, 1792609759.217364, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 13, 2222, no issue with forward, 1792609759.217452, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 13, None, no issue, packet received, 1792609759.217568, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 13, 6666, no issue, echo sent, 1792609759.217736, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 13, 5555, no issue with forward, 1792609759.2178419, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 13, 3333, no issue with forward, 1792609759.218063, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 13, 1111, no issue with forward, 1792609759.218133, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 13, 3333, echo received in 0.8748749969527125 ms, 1792609759.218187, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 14, 3333, no issue, probe sent, 1792609759.218247, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 14, 5555, no issue with forward, 1792609759.2183151, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 14, 6666, no issue with forward, 1792609759.218372, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 14, 2222, no issue with forward, 1792609759.21843, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 14, None, no issue, packet received, 1792609759.218509, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 14, 6666, no issue, echo sent, 1792609759.218566, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 14, 5555, no issue with forward, 1792609759.2186182, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 14, 3333, no issue with forward, 1792609759.218666, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 14, 1111, no issue with forward, 1792609759.218774, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 14, 3333, echo received in 0.5697910091839731 ms, 1792609759.218839, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 15, 3333, no issue, probe sent, 1792609759.219001, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 15, 5555, no issue with forward, 1792609759.219028, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 15, 2222, no issue with forward, 1792609759.219166, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 15, 6666, no issue with forward, 1792609759.2191849, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 15, None, no issue, packet received, 1792609759.2192729, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 15, 6666, no issue, echo sent, 1792609759.219332, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 15, 5555, no issue with forward, 1792609759.219393, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 15, 1111, no issue with forward, 1792609759.219469, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 15, 3333, echo received in 0.4934169992338866 ms, 1792609759.219486, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 15, 3333, no issue with forward, 1792609759.219481, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 16, 5555, no issue with forward, 1792609759.219637, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 16, 3333, no issue, probe sent, 1792609759.2196429, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 16, 6666, no issue with forward, 1792609759.219677, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 16, 2222, no issue with forward, 1792609759.219747, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 16, None, no issue, packet received, 1792609759.219789, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 16, 6666, no issue, echo sent, 1792609759.219831, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 16, 5555, no issue with forward, 1792609759.2198741, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 16, 3333, no issue with forward, 1792609759.2198982, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 16, 1111, no issue with forward, 1792609759.219928, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 16, 3333, echo received in 0.4033750155940652 ms, 1792609759.2199621, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 17, 3333, no issue, probe sent, 1792609759.2200031, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 17, 5555, no issue with forward, 1792609759.220028, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 17, 6666, no issue with forward, 1792609759.220067, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 17, 2222, no issue with forward, 1792609759.220093, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 17, None, no issue, packet received, 1792609759.220138, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 17, 6666, no issue, echo sent, 1792609759.220205, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 17, 5555, no issue with forward, 1792609759.220263, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 17, 3333, no issue with forward, 1792609759.220306, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 17, 1111, no issue with forward, 1792609759.2203782, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 17, 3333, echo received in 0.3940829774364829 ms, 1792609759.2203908, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 18, 3333, no issue, probe sent, 1792609759.220433, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 18, 6666, no issue with forward, 1792609759.220615, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 18, 2222, no issue with forward, 1792609759.220622, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 18, None, no issue, packet received, 1792609759.2206569, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 18, 5555, no issue with forward, 1792609759.2206569, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 18, 6666, no issue, echo sent, 1792609759.2207181, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 18, 5555, no issue with forward, 1792609759.2207518, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 18, 3333, no issue with forward, 1792609759.2208178, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 18, 1111, no issue with forward, 1792609759.220834, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 18, 3333, echo received in 0.4369579837657511 ms, 1792609759.2208729, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 19, 3333, no issue, probe sent, 1792609759.2209358, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 19, 5555, no issue with forward, 1792609759.2209852, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 19, 6666, no issue with forward, 1792609759.221057, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 19, 2222, no issue with forward, 1792609759.221083, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 19, None, no issue, packet received, 1792609759.221121, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 19, 6666, no issue, echo sent, 1792609759.221162, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 19, 5555, no issue with forward, 1792609759.22119, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 19, 3333, no issue with forward, 1792609759.221264, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 19, 1111, no issue with forward, 1792609759.2212968, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 19, 3333, echo received in 0.3985419753007591 ms, 1792609759.221323, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 20, 3333, no issue, probe sent, 1792609759.221371, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 20, 5555, no issue with forward, 1792609759.2214, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 20, 6666, no issue with forward, 1792609759.2214348, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 20, 2222, no issue with forward, 1792609759.221471, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 20, None, no issue, packet received, 1792609759.221535, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 20, 6666, no issue, echo sent, 1792609759.221602, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 20, 5555, no issue with forward, 1792609759.221626, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 20, 3333, no issue with forward, 1792609759.221685, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 20, 1111, no issue with forward, 1792609759.2217128, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 20, 3333, echo received in 0.3987919772043824 ms, 1792609759.221768, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 21, 3333, no issue, probe sent, 1792609759.221814, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 21, 5555, no issue with forward, 1792609759.221845, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 21, 2222, no issue with forward, 1792609759.221913, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 21, 6666, no issue with forward, 1792609759.22195, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 21, None, no issue, packet received, 1792609759.2220008, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 21, 6666, no issue, echo sent, 1792609759.222247, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 21, 5555, no issue with forward, 1792609759.222343, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 21, 3333, no issue with forward, 1792609759.222375, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 21, 1111, no issue with forward, 1792609759.2223868, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 21, 3333, echo received in 0.60224998742342 ms, 1792609759.2224152, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 22, 3333, no issue, probe sent, 1792609759.222463, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 22, 5555, no issue with forward, 1792609759.222507, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 22, 6666, no issue with forward, 1792609759.2226171, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 22, 2222, no issue with forward, 1792609759.222656, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 22, None, no issue, packet received, 1792609759.222901, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 22, 6666, no issue, echo sent, 1792609759.2231932, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 22, 5555, no issue with forward, 1792609759.223551, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 22, 3333, no issue with forward, 1792609759.223604, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 22, 3333, echo received in 1.2783340062014759 ms, 1792609759.223753, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 22, 1111, no issue with forward, 1792609759.22376, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 23, 3333, no issue, probe sent, 1792609759.223805, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 23, 5555, no issue with forward, 1792609759.2238872, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 23, 6666, no issue with forward, 1792609759.223954, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 23, 2222, no issue with forward, 1792609759.2241, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 23, None, no issue, packet received, 1792609759.2242591, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 23, 6666, no issue, echo sent, 1792609759.224511, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 23, 5555, no issue with forward, 1792609759.2245781, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 23, 3333, no issue with forward, 1792609759.224681, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 23, 1111, no issue with forward, 1792609759.2247949, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 23, 3333, echo received in 1.0664589935913682 ms, 1792609759.224917, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 24, 3333, no issue, probe sent, 1792609759.2249742, lowpath
+routerA, forward, hostOne, hostTwo, probe, 7, 24, 5555, no issue with forward, 1792609759.225055, lowpath
+routerC, forward, hostOne, hostTwo, probe, 6, 24, 6666, no issue with forward, 1792609759.225116, lowpath
+hostTwo, receive, hostOne, hostTwo, probe, 5, 24, None, no issue, packet received, 1792609759.225271, lowpath
+routerD, forward, hostOne, hostTwo, probe, 5, 24, 2222, no issue with forward, 1792609759.225271, lowpath
+hostTwo, send, hostTwo, hostOne, echo, 8, 24, 6666, no issue, echo sent, 1792609759.225326, lowpath
+routerD, forward, hostTwo, hostOne, echo, 7, 24, 5555, no issue with forward, 1792609759.225475, lowpath
+routerC, forward, hostTwo, hostOne, echo, 6, 24, 3333, no issue with forward, 1792609759.2255738, lowpath
+routerA, forward, hostTwo, hostOne, echo, 5, 24, 1111, no issue with forward, 1792609759.225612, lowpath
+hostOne, receive, hostTwo, hostOne, echo, 5, 24, 3333, echo received in 0.7100829971022904 ms, 1792609759.225712, lowpath
+hostOne, send, hostOne, hostTwo, probe, 8, 0, 3333, no issue, probe sent, 1792609837.519278, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 0, 3333, no issue with forward, 1792609837.519729, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 0, 4444, no issue with forward, 1792609837.5197299, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 0, 4444, no issue with forward, 1792609837.51984, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 0, 3333, no issue with forward, 1792609837.5200472, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 0, 4444, no issue with forward, 1792609837.520096, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 0, 3333, no issue with forward, 1792609837.5201511, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 0, 4444, no issue with forward, 1792609837.520203, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 0, None, hop limit passed, 1792609837.520236, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 0, None, no echo, 1792609838.521363, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 1, 3333, no issue, probe sent, 1792609838.522859, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 1, 4444, no issue with forward, 1792609838.523266, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 1, 3333, no issue with forward, 1792609838.523463, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 1, 4444, no issue with forward, 1792609838.5237188, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 1, 3333, no issue with forward, 1792609838.524006, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 1, 4444, no issue with forward, 1792609838.5242062, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 1, 3333, no issue with forward, 1792609838.524391, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 1, 4444, no issue with forward, 1792609838.5244942, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 1, None, hop limit passed, 1792609838.5246022, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 1, None, no echo, 1792609839.5247622, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 2, 3333, no issue, probe sent, 1792609839.525457, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 2, 4444, no issue with forward, 1792609839.5257869, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 2, 3333, no issue with forward, 1792609839.52602, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 2, 4444, no issue with forward, 1792609839.5262349, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 2, 3333, no issue with forward, 1792609839.526461, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 2, 4444, no issue with forward, 1792609839.526675, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 2, 3333, no issue with forward, 1792609839.526825, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 2, 4444, no issue with forward, 1792609839.527034, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 2, None, hop limit passed, 1792609839.527101, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 2, None, no echo, 1792609840.527054, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 3, 3333, no issue, probe sent, 1792609840.527732, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 3, 4444, no issue with forward, 1792609840.528073, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 3, 3333, no issue with forward, 1792609840.5283892, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 3, 4444, no issue with forward, 1792609840.528627, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 3, 3333, no issue with forward, 1792609840.529058, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 3, 4444, no issue with forward, 1792609840.529278, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 3, 3333, no issue with forward, 1792609840.529593, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 3, None, hop limit passed, 1792609840.5299652, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 3, 4444, no issue with forward, 1792609840.5299652, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 3, None, no echo, 1792609841.5291588, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 4, 3333, no issue, probe sent, 1792609841.529692, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 4, 4444, no issue with forward, 1792609841.530028, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 4, 3333, no issue with forward, 1792609841.530317, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 4, 4444, no issue with forward, 1792609841.530423, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 4, 3333, no issue with forward, 1792609841.530619, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 4, 4444, no issue with forward, 1792609841.530991, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 4, 4444, no issue with forward, 1792609841.531305, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 4, 3333, no issue with forward, 1792609841.531747, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 4, None, hop limit passed, 1792609841.532321, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 4, None, no echo, 1792609842.530685, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 5, 3333, no issue, probe sent, 1792609842.531431, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 5, 4444, no issue with forward, 1792609842.531818, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 5, 3333, no issue with forward, 1792609842.532147, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 5, 4444, no issue with forward, 1792609842.532377, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 5, 3333, no issue with forward, 1792609842.532589, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 5, 4444, no issue with forward, 1792609842.532777, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 5, 3333, no issue with forward, 1792609842.5329669, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 5, 4444, no issue with forward, 1792609842.533198, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 5, None, hop limit passed, 1792609842.533223, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 5, None, no echo, 1792609843.532219, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 6, 3333, no issue, probe sent, 1792609843.532802, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 6, 4444, no issue with forward, 1792609843.5330272, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 6, 3333, no issue with forward, 1792609843.5331872, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 6, 4444, no issue with forward, 1792609843.533226, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 6, 3333, no issue with forward, 1792609843.533335, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 6, 4444, no issue with forward, 1792609843.5334342, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 6, 3333, no issue with forward, 1792609843.533522, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 6, 4444, no issue with forward, 1792609843.533619, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 6, None, hop limit passed, 1792609843.533639, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 6, None, no echo, 1792609844.534233, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 7, 3333, no issue, probe sent, 1792609844.534914, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 7, 4444, no issue with forward, 1792609844.535157, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 7, 3333, no issue with forward, 1792609844.535367, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 7, 4444, no issue with forward, 1792609844.535553, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 7, 3333, no issue with forward, 1792609844.5357141, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 7, 4444, no issue with forward, 1792609844.535773, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 7, 3333, no issue with forward, 1792609844.535915, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 7, 4444, no issue with forward, 1792609844.5360498, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 7, None, hop limit passed, 1792609844.536108, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 7, None, no echo, 1792609845.536118, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 8, 3333, no issue, probe sent, 1792609845.53684, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 8, 4444, no issue with forward, 1792609845.5372102, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 8, 3333, no issue with forward, 1792609845.5374851, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 8, 4444, no issue with forward, 1792609845.5377018, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 8, 3333, no issue with forward, 1792609845.537856, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 8, 4444, no issue with forward, 1792609845.537982, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 8, 3333, no issue with forward, 1792609845.538225, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 8, 4444, no issue with forward, 1792609845.5384252, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 8, None, hop limit passed, 1792609845.538516, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 8, None, no echo, 1792609846.538592, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 9, 3333, no issue, probe sent, 1792609846.5393379, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 9, 4444, no issue with forward, 1792609846.539781, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 9, 3333, no issue with forward, 1792609846.540127, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 9, 4444, no issue with forward, 1792609846.5404632, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 9, 3333, no issue with forward, 1792609846.540721, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 9, 4444, no issue with forward, 1792609846.540976, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 9, 3333, no issue with forward, 1792609846.5411682, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 9, 4444, no issue with forward, 1792609846.541366, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 9, None, hop limit passed, 1792609846.541533, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 9, None, no echo, 1792609847.54048, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 10, 3333, no issue, probe sent, 1792609847.541097, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 10, 4444, no issue with forward, 1792609847.541417, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 10, 3333, no issue with forward, 1792609847.541683, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 10, 4444, no issue with forward, 1792609847.541868, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 10, 3333, no issue with forward, 1792609847.542031, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 10, 4444, no issue with forward, 1792609847.5421429, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 10, 3333, no issue with forward, 1792609847.5422301, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 10, 4444, no issue with forward, 1792609847.542326, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 10, None, hop limit passed, 1792609847.542358, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 10, None, no echo, 1792609848.542635, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 11, 3333, no issue, probe sent, 1792609848.543457, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 11, 4444, no issue with forward, 1792609848.543851, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 11, 3333, no issue with forward, 1792609848.54421, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 11, 4444, no issue with forward, 1792609848.5444531, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 11, 3333, no issue with forward, 1792609848.544681, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 11, 4444, no issue with forward, 1792609848.544872, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 11, 3333, no issue with forward, 1792609848.545064, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 11, 4444, no issue with forward, 1792609848.545245, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 11, None, hop limit passed, 1792609848.545336, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 11, None, no echo, 1792609849.54525, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 12, 3333, no issue, probe sent, 1792609849.546043, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 12, 4444, no issue with forward, 1792609849.546301, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 12, 3333, no issue with forward, 1792609849.546551, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 12, 4444, no issue with forward, 1792609849.546788, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 12, 3333, no issue with forward, 1792609849.5469599, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 12, 4444, no issue with forward, 1792609849.547105, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 12, 3333, no issue with forward, 1792609849.547224, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 12, 4444, no issue with forward, 1792609849.5474958, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 12, None, hop limit passed, 1792609849.547559, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 12, None, no echo, 1792609850.547491, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 13, 3333, no issue, probe sent, 1792609850.5481641, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 13, 4444, no issue with forward, 1792609850.54855, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 13, 3333, no issue with forward, 1792609850.548765, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 13, 4444, no issue with forward, 1792609850.548954, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 13, 3333, no issue with forward, 1792609850.5491142, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 13, 4444, no issue with forward, 1792609850.549234, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 13, 3333, no issue with forward, 1792609850.54934, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 13, 4444, no issue with forward, 1792609850.5495, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 13, None, hop limit passed, 1792609850.549561, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 13, None, no echo, 1792609851.54973, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 14, 3333, no issue, probe sent, 1792609851.5503418, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 14, 4444, no issue with forward, 1792609851.5506408, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 14, 3333, no issue with forward, 1792609851.5508668, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 14, 4444, no issue with forward, 1792609851.55103, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 14, 3333, no issue with forward, 1792609851.551187, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 14, 4444, no issue with forward, 1792609851.551326, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 14, 3333, no issue with forward, 1792609851.5515, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 14, 4444, no issue with forward, 1792609851.5516958, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 14, None, hop limit passed, 1792609851.551788, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 14, None, no echo, 1792609852.5509849, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 15, 3333, no issue, probe sent, 1792609852.5519402, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 15, 4444, no issue with forward, 1792609852.5522602, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 15, 3333, no issue with forward, 1792609852.5525062, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 15, 4444, no issue with forward, 1792609852.552686, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 15, 3333, no issue with forward, 1792609852.5528588, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 15, 4444, no issue with forward, 1792609852.553003, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 15, 3333, no issue with forward, 1792609852.5531719, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 15, 4444, no issue with forward, 1792609852.553375, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 15, None, hop limit passed, 1792609852.553408, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 15, None, no echo, 1792609853.5535731, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 16, 3333, no issue, probe sent, 1792609853.554414, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 16, 4444, no issue with forward, 1792609853.5548081, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 16, 3333, no issue with forward, 1792609853.5551949, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 16, 4444, no issue with forward, 1792609853.555448, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 16, 3333, no issue with forward, 1792609853.5557408, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 16, 4444, no issue with forward, 1792609853.556021, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 16, 3333, no issue with forward, 1792609853.556222, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 16, 4444, no issue with forward, 1792609853.55637, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 16, None, hop limit passed, 1792609853.556642, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 16, None, no echo, 1792609854.556136, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 17, 3333, no issue, probe sent, 1792609854.5568519, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 17, 4444, no issue with forward, 1792609854.557216, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 17, 3333, no issue with forward, 1792609854.557526, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 17, 4444, no issue with forward, 1792609854.5577338, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 17, 3333, no issue with forward, 1792609854.5579252, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 17, 4444, no issue with forward, 1792609854.557954, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 17, 3333, no issue with forward, 1792609854.5582201, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 17, 4444, no issue with forward, 1792609854.558362, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 17, None, hop limit passed, 1792609854.558465, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 17, None, no echo, 1792609855.558491, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 18, 3333, no issue, probe sent, 1792609855.5591402, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 18, 4444, no issue with forward, 1792609855.559391, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 18, 3333, no issue with forward, 1792609855.5595992, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 18, 4444, no issue with forward, 1792609855.559773, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 18, 3333, no issue with forward, 1792609855.559933, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 18, 4444, no issue with forward, 1792609855.5599868, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 18, 3333, no issue with forward, 1792609855.560102, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 18, 4444, no issue with forward, 1792609855.5602229, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 18, None, hop limit passed, 1792609855.5602932, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 18, None, no echo, 1792609856.5607018, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 19, 3333, no issue, probe sent, 1792609856.561413, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 19, 4444, no issue with forward, 1792609856.561721, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 19, 3333, no issue with forward, 1792609856.561954, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 19, 4444, no issue with forward, 1792609856.562189, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 19, 3333, no issue with forward, 1792609856.562399, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 19, 4444, no issue with forward, 1792609856.562529, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 19, 3333, no issue with forward, 1792609856.562677, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 19, 4444, no issue with forward, 1792609856.562829, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 19, None, hop limit passed, 1792609856.562871, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 19, None, no echo, 1792609857.562936, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 20, 3333, no issue, probe sent, 1792609857.563572, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 20, 4444, no issue with forward, 1792609857.5638678, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 20, 3333, no issue with forward, 1792609857.5641, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 20, 4444, no issue with forward, 1792609857.564277, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 20, 3333, no issue with forward, 1792609857.564492, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 20, 4444, no issue with forward, 1792609857.5645702, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 20, 3333, no issue with forward, 1792609857.5647922, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 20, 4444, no issue with forward, 1792609857.564928, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 20, None, hop limit passed, 1792609857.5651772, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 20, None, no echo, 1792609858.564197, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 21, 3333, no issue, probe sent, 1792609858.565008, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 21, 4444, no issue with forward, 1792609858.5654862, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 21, 3333, no issue with forward, 1792609858.5657961, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 21, 4444, no issue with forward, 1792609858.566005, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 21, 3333, no issue with forward, 1792609858.566231, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 21, 4444, no issue with forward, 1792609858.5663629, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 21, 3333, no issue with forward, 1792609858.566516, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 21, 4444, no issue with forward, 1792609858.566628, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 21, None, hop limit passed, 1792609858.566752, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 21, None, no echo, 1792609859.566727, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 22, 3333, no issue, probe sent, 1792609859.567452, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 22, 4444, no issue with forward, 1792609859.567774, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 22, 3333, no issue with forward, 1792609859.568057, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 22, 4444, no issue with forward, 1792609859.56829, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 22, 3333, no issue with forward, 1792609859.568504, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 22, 4444, no issue with forward, 1792609859.568628, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 22, 3333, no issue with forward, 1792609859.568752, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 22, 4444, no issue with forward, 1792609859.568846, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 22, None, hop limit passed, 1792609859.5689301, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 22, None, no echo, 1792609860.568959, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 23, 3333, no issue, probe sent, 1792609860.569673, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 23, 4444, no issue with forward, 1792609860.5699399, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 23, 3333, no issue with forward, 1792609860.570152, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 23, 4444, no issue with forward, 1792609860.570326, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 23, 3333, no issue with forward, 1792609860.570524, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 23, 4444, no issue with forward, 1792609860.570792, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 23, 3333, no issue with forward, 1792609860.571462, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 23, 4444, no issue with forward, 1792609860.5715961, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 23, None, hop limit passed, 1792609860.571821, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 23, None, no echo, 1792609861.5712209, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 24, 3333, no issue, probe sent, 1792609861.5724149, loop
+routerA, forward, hostOne, hostTwo, probe, 7, 24, 4444, no issue with forward, 1792609861.57282, loop
+routerB, forward, hostOne, hostTwo, probe, 6, 24, 3333, no issue with forward, 1792609861.5731258, loop
+routerA, forward, hostOne, hostTwo, probe, 5, 24, 4444, no issue with forward, 1792609861.573466, loop
+routerB, forward, hostOne, hostTwo, probe, 4, 24, 3333, no issue with forward, 1792609861.573705, loop
+routerA, forward, hostOne, hostTwo, probe, 3, 24, 4444, no issue with forward, 1792609861.5739388, loop
+routerB, forward, hostOne, hostTwo, probe, 2, 24, 3333, no issue with forward, 1792609861.574097, loop
+routerA, forward, hostOne, hostTwo, probe, 1, 24, 4444, no issue with forward, 1792609861.574215, loop
+routerB, drop, hostOne, hostTwo, probe, 0, 24, None, hop limit passed, 1792609861.5742989, loop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 24, None, no echo, 1792609862.5739992, loop
+hostOne, send, hostOne, hostTwo, probe, 8, 0, 3333, no issue, probe sent, 1792610227.745596, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 0, 4444, no issue with forward, 1792610227.745894, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 0, 6666, no issue with forward, 1792610227.746112, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 0, 2222, no issue with forward, 1792610227.746372, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 0, None, no issue, packet received, 1792610227.746547, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 0, 6666, no issue, echo sent, 1792610227.74669, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 0, 4444, no issue with forward, 1792610227.74676, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 0, 3333, no issue with forward, 1792610227.746815, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 0, 1111, no issue with forward, 1792610227.74688, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 0, 3333, echo received in 1.3768750068265945 ms, 1792610227.7469282, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 1, 3333, no issue, probe sent, 1792610227.746999, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 1, 4444, no issue with forward, 1792610227.747037, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 1, 6666, no issue with forward, 1792610227.747115, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 1, 2222, no issue with forward, 1792610227.747146, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 1, None, no issue, packet received, 1792610227.747185, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 1, 6666, no issue, echo sent, 1792610227.7472482, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 1, 4444, no issue with forward, 1792610227.747277, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 1, 3333, no issue with forward, 1792610227.747319, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 1, 1111, no issue with forward, 1792610227.7473788, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 1, 3333, echo received in 0.4138750082347542 ms, 1792610227.747413, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 2, 3333, no issue, probe sent, 1792610227.7474718, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 2, 4444, no issue with forward, 1792610227.747515, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 2, 6666, no issue with forward, 1792610227.7475688, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 2, 2222, no issue with forward, 1792610227.7476149, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 2, None, no issue, packet received, 1792610227.7476459, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 2, 6666, no issue, echo sent, 1792610227.747701, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 2, 4444, no issue with forward, 1792610227.7477288, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 2, 3333, no issue with forward, 1792610227.747776, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 2, 1111, no issue with forward, 1792610227.747801, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 2, 3333, echo received in 0.3744999994523823 ms, 1792610227.747838, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 3, 3333, no issue, probe sent, 1792610227.7478771, forcedrop
+routerA, drop, hostOne, hostTwo, probe, 7, 3, 4444, drop is forced, 1792610227.747895, forcedrop
+hostOne, timeout, hostOne, hostTwo, probe, 8, 3, None, no echo, 1792610228.749316, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 4, 3333, no issue, probe sent, 1792610228.7501829, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 4, 4444, no issue with forward, 1792610228.75052, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 4, 6666, no issue with forward, 1792610228.750844, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 4, 2222, no issue with forward, 1792610228.751124, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 4, None, no issue, packet received, 1792610228.751282, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 4, 6666, no issue, echo sent, 1792610228.751793, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 4, 4444, no issue with forward, 1792610228.751926, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 4, 3333, no issue with forward, 1792610228.752094, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 4, 1111, no issue with forward, 1792610228.7522209, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 4, 3333, echo received in 2.40904200472869 ms, 1792610228.7523258, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 5, 3333, no issue, probe sent, 1792610228.7525492, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 5, 4444, no issue with forward, 1792610228.7526882, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 5, 6666, no issue with forward, 1792610228.7528288, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 5, 2222, no issue with forward, 1792610228.75289, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 5, None, no issue, packet received, 1792610228.752954, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 5, 6666, no issue, echo sent, 1792610228.75323, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 5, 4444, no issue with forward, 1792610228.7534752, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 5, 3333, no issue with forward, 1792610228.7536662, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 5, 1111, no issue with forward, 1792610228.7538161, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 5, 3333, echo received in 1.3342919992282987 ms, 1792610228.7538261, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 6, 3333, no issue, probe sent, 1792610228.754082, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 6, 4444, no issue with forward, 1792610228.754247, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 6, 6666, no issue with forward, 1792610228.754426, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 6, 2222, no issue with forward, 1792610228.754555, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 6, None, no issue, packet received, 1792610228.754831, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 6, 6666, no issue, echo sent, 1792610228.755782, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 6, 4444, no issue with forward, 1792610228.756137, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 6, 3333, no issue with forward, 1792610228.756452, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 6, 1111, no issue with forward, 1792610228.75706, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 6, 3333, echo received in 3.521833015838638 ms, 1792610228.7577841, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 7, 3333, no issue, probe sent, 1792610228.758288, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 7, 4444, no issue with forward, 1792610228.758622, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 7, 6666, no issue with forward, 1792610228.7588239, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 7, 2222, no issue with forward, 1792610228.7590048, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 7, None, no issue, packet received, 1792610228.759107, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 7, 6666, no issue, echo sent, 1792610228.759608, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 7, 4444, no issue with forward, 1792610228.7598379, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 7, 3333, no issue with forward, 1792610228.7602031, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 7, 1111, no issue with forward, 1792610228.760349, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 7, 3333, echo received in 2.3557910171803087 ms, 1792610228.760552, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 8, 3333, no issue, probe sent, 1792610228.760913, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 8, 4444, no issue with forward, 1792610228.7611132, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 8, 6666, no issue with forward, 1792610228.7612941, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 8, 2222, no issue with forward, 1792610228.761308, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 8, None, no issue, packet received, 1792610228.761678, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 8, 6666, no issue, echo sent, 1792610228.76209, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 8, 4444, no issue with forward, 1792610228.762274, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 8, 3333, no issue with forward, 1792610228.762611, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 8, 1111, no issue with forward, 1792610228.7628229, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 8, 3333, echo received in 2.040125022176653 ms, 1792610228.7628531, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 9, 3333, no issue, probe sent, 1792610228.7631302, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 9, 4444, no issue with forward, 1792610228.763329, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 9, 6666, no issue with forward, 1792610228.7634828, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 9, 2222, no issue with forward, 1792610228.763547, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 9, None, no issue, packet received, 1792610228.763608, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 9, 6666, no issue, echo sent, 1792610228.763883, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 9, 4444, no issue with forward, 1792610228.764042, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 9, 3333, no issue with forward, 1792610228.7642088, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 9, 1111, no issue with forward, 1792610228.7642171, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 9, 3333, echo received in 1.2204159866087139 ms, 1792610228.7642891, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 10, 3333, no issue, probe sent, 1792610228.76456, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 10, 4444, no issue with forward, 1792610228.7647, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 10, 2222, no issue with forward, 1792610228.764888, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 10, 6666, no issue with forward, 1792610228.7648928, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 10, None, no issue, packet received, 1792610228.7654002, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 10, 6666, no issue, echo sent, 1792610228.765725, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 10, 4444, no issue with forward, 1792610228.766075, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 10, 3333, no issue with forward, 1792610228.7661939, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 10, 1111, no issue with forward, 1792610228.766581, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 10, 3333, echo received in 2.143500023521483 ms, 1792610228.7667708, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 11, 3333, no issue, probe sent, 1792610228.767325, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 11, 4444, no issue with forward, 1792610228.767436, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 11, 6666, no issue with forward, 1792610228.767654, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 11, 2222, no issue with forward, 1792610228.7678201, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 11, None, no issue, packet received, 1792610228.767927, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 11, 6666, no issue, echo sent, 1792610228.7681012, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 11, 4444, no issue with forward, 1792610228.7681851, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 11, 3333, no issue with forward, 1792610228.768335, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 11, 1111, no issue with forward, 1792610228.768466, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 11, 3333, echo received in 1.5319160011131316 ms, 1792610228.768553, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 12, 3333, no issue, probe sent, 1792610228.7688, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 12, 4444, no issue with forward, 1792610228.768888, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 12, 6666, no issue with forward, 1792610228.769004, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 12, 2222, no issue with forward, 1792610228.769207, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 12, None, no issue, packet received, 1792610228.76922, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 12, 6666, no issue, echo sent, 1792610228.769336, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 12, 4444, no issue with forward, 1792610228.769407, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 12, 3333, no issue with forward, 1792610228.7694669, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 12, 1111, no issue with forward, 1792610228.7695959, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 12, 3333, echo received in 0.8662920154165477 ms, 1792610228.769641, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 13, 3333, no issue, probe sent, 1792610228.769759, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 13, 4444, no issue with forward, 1792610228.7698371, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 13, 6666, no issue with forward, 1792610228.76989, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 13, 2222, no issue with forward, 1792610228.770033, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 13, None, no issue, packet received, 1792610228.770182, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 13, 6666, no issue, echo sent, 1792610228.770357, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 13, 4444, no issue with forward, 1792610228.770517, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 13, 3333, no issue with forward, 1792610228.770622, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 13, 1111, no issue with forward, 1792610228.770665, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 13, 3333, echo received in 1.0451670095790178 ms, 1792610228.7707908, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 14, 3333, no issue, probe sent, 1792610228.7709508, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 14, 4444, no issue with forward, 1792610228.7710552, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 14, 6666, no issue with forward, 1792610228.771177, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 14, 2222, no issue with forward, 1792610228.7713332, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 14, None, no issue, packet received, 1792610228.771355, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 14, 6666, no issue, echo sent, 1792610228.771543, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 14, 4444, no issue with forward, 1792610228.771633, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 14, 3333, no issue with forward, 1792610228.771883, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 14, 1111, no issue with forward, 1792610228.77192, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 14, 3333, echo received in 1.0536250192672014 ms, 1792610228.772158, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 15, 3333, no issue, probe sent, 1792610228.772414, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 15, 4444, no issue with forward, 1792610228.772546, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 15, 6666, no issue with forward, 1792610228.772747, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 15, 2222, no issue with forward, 1792610228.772834, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 15, None, no issue, packet received, 1792610228.772877, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 15, 6666, no issue, echo sent, 1792610228.7731562, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 15, 4444, no issue with forward, 1792610228.7732348, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 15, 3333, no issue with forward, 1792610228.7734241, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 15, 3333, echo received in 1.2430000060703605 ms, 1792610228.773657, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 15, 1111, no issue with forward, 1792610228.773692, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 16, 3333, no issue, probe sent, 1792610228.7740119, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 16, 4444, no issue with forward, 1792610228.774218, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 16, 6666, no issue with forward, 1792610228.774295, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 16, 2222, no issue with forward, 1792610228.774389, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 16, None, no issue, packet received, 1792610228.77453, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 16, 6666, no issue, echo sent, 1792610228.7746692, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 16, 4444, no issue with forward, 1792610228.774806, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 16, 3333, no issue with forward, 1792610228.77496, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 16, 1111, no issue with forward, 1792610228.774985, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 16, 3333, echo received in 1.1935420043300837 ms, 1792610228.77514, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 17, 3333, no issue, probe sent, 1792610228.77536, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 17, 4444, no issue with forward, 1792610228.775427, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 17, 6666, no issue with forward, 1792610228.775532, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 17, 2222, no issue with forward, 1792610228.775742, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 17, None, no issue, packet received, 1792610228.775768, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 17, 6666, no issue, echo sent, 1792610228.7759628, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 17, 4444, no issue with forward, 1792610228.776216, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 17, 3333, no issue with forward, 1792610228.776206, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 17, 1111, no issue with forward, 1792610228.776341, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 17, 3333, echo received in 1.089083991246298 ms, 1792610228.776457, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 18, 3333, no issue, probe sent, 1792610228.776651, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 18, 4444, no issue with forward, 1792610228.776763, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 18, 6666, no issue with forward, 1792610228.7768168, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 18, 2222, no issue with forward, 1792610228.776902, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 18, None, no issue, packet received, 1792610228.776931, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 18, 6666, no issue, echo sent, 1792610228.777018, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 18, 4444, no issue with forward, 1792610228.777078, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 18, 3333, no issue with forward, 1792610228.7771451, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 18, 1111, no issue with forward, 1792610228.7772002, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 18, 3333, echo received in 0.7006670057307929 ms, 1792610228.7772899, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 19, 3333, no issue, probe sent, 1792610228.7773702, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 19, 4444, no issue with forward, 1792610228.7774248, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 19, 6666, no issue with forward, 1792610228.777476, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 19, 2222, no issue with forward, 1792610228.7775779, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 19, None, no issue, packet received, 1792610228.777626, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 19, 6666, no issue, echo sent, 1792610228.777697, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 19, 4444, no issue with forward, 1792610228.7777889, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 19, 3333, no issue with forward, 1792610228.777845, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 19, 1111, no issue with forward, 1792610228.7779121, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 19, 3333, echo received in 0.5798329948447645 ms, 1792610228.777948, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 20, 3333, no issue, probe sent, 1792610228.778023, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 20, 4444, no issue with forward, 1792610228.778069, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 20, 6666, no issue with forward, 1792610228.7781498, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 20, 2222, no issue with forward, 1792610228.778217, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 20, None, no issue, packet received, 1792610228.778267, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 20, 6666, no issue, echo sent, 1792610228.778367, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 20, 4444, no issue with forward, 1792610228.778406, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 20, 3333, no issue with forward, 1792610228.778501, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 20, 1111, no issue with forward, 1792610228.778563, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 20, 3333, echo received in 0.5750830168835819 ms, 1792610228.7785962, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 21, 3333, no issue, probe sent, 1792610228.778687, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 21, 4444, no issue with forward, 1792610228.778739, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 21, 6666, no issue with forward, 1792610228.778795, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 21, 2222, no issue with forward, 1792610228.778843, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 21, None, no issue, packet received, 1792610228.7788868, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 21, 6666, no issue, echo sent, 1792610228.778962, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 21, 4444, no issue with forward, 1792610228.779001, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 21, 3333, no issue with forward, 1792610228.779053, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 21, 1111, no issue with forward, 1792610228.779094, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 21, 3333, echo received in 0.4734169924631715 ms, 1792610228.779166, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 22, 3333, no issue, probe sent, 1792610228.779239, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 22, 4444, no issue with forward, 1792610228.7793028, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 22, 6666, no issue with forward, 1792610228.7793338, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 22, 2222, no issue with forward, 1792610228.779414, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 22, None, no issue, packet received, 1792610228.779438, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 22, 6666, no issue, echo sent, 1792610228.7795, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 22, 4444, no issue with forward, 1792610228.779552, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 22, 3333, no issue with forward, 1792610228.779594, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 22, 1111, no issue with forward, 1792610228.7796621, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 22, 3333, echo received in 0.5127079784870148 ms, 1792610228.779742, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 23, 3333, no issue, probe sent, 1792610228.779805, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 23, 4444, no issue with forward, 1792610228.77985, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 23, 6666, no issue with forward, 1792610228.77998, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 23, 2222, no issue with forward, 1792610228.78003, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 23, None, no issue, packet received, 1792610228.7802188, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 23, 6666, no issue, echo sent, 1792610228.780298, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 23, 4444, no issue with forward, 1792610228.7803671, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 23, 3333, no issue with forward, 1792610228.780462, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 23, 1111, no issue with forward, 1792610228.7805061, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 23, 3333, echo received in 0.8354159945156425 ms, 1792610228.780638, forcedrop
+hostOne, send, hostOne, hostTwo, probe, 8, 24, 3333, no issue, probe sent, 1792610228.7808251, forcedrop
+routerA, forward, hostOne, hostTwo, probe, 7, 24, 4444, no issue with forward, 1792610228.780923, forcedrop
+routerB, forward, hostOne, hostTwo, probe, 6, 24, 6666, no issue with forward, 1792610228.7810152, forcedrop
+routerD, forward, hostOne, hostTwo, probe, 5, 24, 2222, no issue with forward, 1792610228.78107, forcedrop
+hostTwo, receive, hostOne, hostTwo, probe, 5, 24, None, no issue, packet received, 1792610228.78108, forcedrop
+hostTwo, send, hostTwo, hostOne, echo, 8, 24, 6666, no issue, echo sent, 1792610228.7811682, forcedrop
+routerD, forward, hostTwo, hostOne, echo, 7, 24, 4444, no issue with forward, 1792610228.7811992, forcedrop
+routerB, forward, hostTwo, hostOne, echo, 6, 24, 3333, no issue with forward, 1792610228.781277, forcedrop
+routerA, forward, hostTwo, hostOne, echo, 5, 24, 1111, no issue with forward, 1792610228.781333, forcedrop
+hostOne, receive, hostTwo, hostOne, echo, 5, 24, 3333, echo received in 0.5825829866807908 ms, 1792610228.7813592, forcedrop
+hostOne, send, hostOne, hostThree, probe, 8, 0, 3333, no issue, probe sent, 1792610337.6534898, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 0, None, no echo, 1792610338.6550558, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 1, 3333, no issue, probe sent, 1792610338.655314, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 1, None, destination not in forwarding table, 1792610338.655531, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 1, None, no echo, 1792610339.6567738, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 2, 3333, no issue, probe sent, 1792610339.6576838, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 2, None, destination not in forwarding table, 1792610339.658077, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 2, None, no echo, 1792610340.659287, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 3, 3333, no issue, probe sent, 1792610340.659809, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 3, None, destination not in forwarding table, 1792610340.660012, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 3, None, no echo, 1792610341.661084, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 4, 3333, no issue, probe sent, 1792610341.661332, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 4, None, destination not in forwarding table, 1792610341.661451, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 4, None, no echo, 1792610342.666555, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 5, 3333, no issue, probe sent, 1792610342.6677299, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 5, None, destination not in forwarding table, 1792610342.669268, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 5, None, no echo, 1792610343.669198, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 6, 3333, no issue, probe sent, 1792610343.669732, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 6, None, destination not in forwarding table, 1792610343.6699278, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 6, None, no echo, 1792610344.671241, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 7, 3333, no issue, probe sent, 1792610344.6717892, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 7, None, destination not in forwarding table, 1792610344.671998, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 7, None, no echo, 1792610345.673511, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 8, 3333, no issue, probe sent, 1792610345.674444, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 8, None, destination not in forwarding table, 1792610345.674685, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 8, None, no echo, 1792610346.675793, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 9, 3333, no issue, probe sent, 1792610346.676068, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 9, None, destination not in forwarding table, 1792610346.676159, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 9, None, no echo, 1792610347.6774132, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 10, 3333, no issue, probe sent, 1792610347.677901, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 10, None, destination not in forwarding table, 1792610347.67809, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 10, None, no echo, 1792610348.6794538, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 11, 3333, no issue, probe sent, 1792610348.680147, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 11, None, destination not in forwarding table, 1792610348.6803288, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 11, None, no echo, 1792610349.6816251, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 12, 3333, no issue, probe sent, 1792610349.682152, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 12, None, destination not in forwarding table, 1792610349.682312, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 12, None, no echo, 1792610350.683548, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 13, 3333, no issue, probe sent, 1792610350.6842182, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 13, None, destination not in forwarding table, 1792610350.684503, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 13, None, no echo, 1792610351.685803, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 14, 3333, no issue, probe sent, 1792610351.686408, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 14, None, destination not in forwarding table, 1792610351.686594, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 14, None, no echo, 1792610352.687875, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 15, 3333, no issue, probe sent, 1792610352.688513, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 15, None, destination not in forwarding table, 1792610352.688695, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 15, None, no echo, 1792610353.689323, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 16, 3333, no issue, probe sent, 1792610353.689929, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 16, None, destination not in forwarding table, 1792610353.6901782, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 16, None, no echo, 1792610354.691447, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 17, 3333, no issue, probe sent, 1792610354.692126, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 17, None, destination not in forwarding table, 1792610354.692369, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 17, None, no echo, 1792610355.6930828, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 18, 3333, no issue, probe sent, 1792610355.6937642, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 18, None, destination not in forwarding table, 1792610355.69399, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 18, None, no echo, 1792610356.694953, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 19, 3333, no issue, probe sent, 1792610356.695592, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 19, None, destination not in forwarding table, 1792610356.695817, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 19, None, no echo, 1792610357.697054, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 20, 3333, no issue, probe sent, 1792610357.697726, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 20, None, destination not in forwarding table, 1792610357.698096, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 20, None, no echo, 1792610358.69932, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 21, 3333, no issue, probe sent, 1792610358.700097, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 21, None, destination not in forwarding table, 1792610358.700373, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 21, None, no echo, 1792610359.701617, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 22, 3333, no issue, probe sent, 1792610359.7022998, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 22, None, destination not in forwarding table, 1792610359.702496, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 22, None, no echo, 1792610360.703653, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 23, 3333, no issue, probe sent, 1792610360.704254, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 23, None, destination not in forwarding table, 1792610360.7045062, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 23, None, no echo, 1792610361.705775, unknowndest
+hostOne, send, hostOne, hostThree, probe, 8, 24, 3333, no issue, probe sent, 1792610361.7064729, unknowndest
+routerA, drop, hostOne, hostThree, probe, 7, 24, None, destination not in forwarding table, 1792610361.7067251, unknowndest
+hostOne, timeout, hostOne, hostThree, probe, 8, 24, None, no echo, 1792610362.707905, unknowndest
