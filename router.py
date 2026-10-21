@@ -73,6 +73,9 @@ while True:
     if decoded['hopLimit'] < 1:
         print("Hop limit is ", decoded['hopLimit'], ", dropping the packet")
         continue
+    if dest not in routerInfo['table']:
+        print("Destination isn't in the forwarding table, dropping the packet")
+        continue
     nextHop = routerInfo['table'][dest]
     if nextHop not in routerInfo['neighbor_ports']:
         print("Next hop is not in the neighbor ports, dropping the packet")
