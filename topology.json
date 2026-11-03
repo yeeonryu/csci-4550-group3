@@ -1,0 +1,19 @@
+
+{
+  "routerA": {
+    "routerB": 1,
+    "routerC": 1
+  },
+  "routerB": {
+    "routerA": 1,
+    "routerD": 1
+  },
+  "routerC": {
+    "routerA": 1,
+    "routerD": 1
+  },
+  "routerD": {
+    "routerB": 1,
+    "routerC": 1
+  }
+}
